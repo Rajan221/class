@@ -22,15 +22,14 @@
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">Email</span>
-                        <input type="text" name="email"  class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
+                        <input type="email" name="email"  class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                     <button type="submit" class="btn btn-primary mb-3">Save</button>
                     <?php
-                        if(isset($_GET['msg'])){ ?>
-                            <div class="alert alert-secondary" role="alert">
-                                <?php echo $_GET['msg']; ?>
-                            </div>
-                        <?php } ?>
+                        if(isset($_GET['msg'])){ 
+                             echo '<script>alert("'. $_GET['msg'] .'")</script>';
+                            } 
+                         ?>
                 </form>
             </div>
         </div>

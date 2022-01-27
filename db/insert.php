@@ -6,6 +6,8 @@ $contact=$_POST['contact'];
 $email=$_POST['email'];
 $msg="";
 
+
+
 if($name==''){
     $msg="Name is required";
 }
@@ -28,4 +30,5 @@ else{
 
 echo $msg;
 header("Location:../form.php?msg=".$msg);
+
 ?>
