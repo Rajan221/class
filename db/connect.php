@@ -2,18 +2,18 @@
 $host="localhost";
 $username="root";
 $password="";
-$dbname="rajan";
+
+// userdefined
+$dbname="test";
 
 $con=mysqli_connect($host, $username, $password, $dbname);
+
 if(!$con){
-    die("Connection terminated");
-    echo "<br>";
+    echo "Not connected";
 }
 else{
-    echo ("Connection established");
-    echo "<br>";
+    echo "Connected";
 }
-
 
 
 ?>
